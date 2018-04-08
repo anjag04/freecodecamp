@@ -1,6 +1,10 @@
 <link href = 'https://fonts.googleapis.com/css?family=Lobster' rel = 'stylesheet' type = 'text/css'>
 
 <style>
+#cat-photo-form
+{
+  background-color : green;
+}
 .silver-background
 {
   background-color : silver;
@@ -65,7 +69,8 @@ h2
         <li> other cats </li>
       </ol>
   </div>
-
+  
+  <form action = '/submit-cat-photo' id = 'cat-photo-form'>
     <label>
       <input type = 'radio' name = 'indoor-outdoor' checked>
         indoor
@@ -86,8 +91,6 @@ h2
       <input type = 'checkbox' name = 'personality'>
         Energetoc
     </label>    
-
-  <form action = '/submit-cat-photo' id = 'cat-photo-form'>
     <input type = 'text' required placeholder = 'cat photo URL'>
     <button type = submit>
       Submit
